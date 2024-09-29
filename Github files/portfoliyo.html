@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj's portfoliyo</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+    }
+    body{
+        color: #ededed;
+        background: #081b29;
+    }
+
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding:20px 10% ;
+        background-color:#051129 ;
+        display: flex;
+        justify-content:space-between ;
+        align-items: center;
+        z-index: 100;
+
+    }
+    .logo{
+        position: relative;
+        font-size: 25px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        
+    }
+    .navbar a{
+        display: inline-block;
+        font-size: 25px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 35px;
+        transition: .3s;
+    }
+    .navbar a{
+        display: inline-block;
+    padding: 12px 20px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    animation: alideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 0px #0ef,
+              0 0 25px #0ef;
+    }
+    .navbar a:hover{
+        box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan;
+    }
+    .home
+{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(WhatsApp\ Image\ 2024-09-26\ at\ 21.16.20_33a2bf48.jpg) no-repeat ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 100px 13% 0;
+
+}
+.home-content{
+    
+    max-width: 600px;
+
+}
+.home-content h1 span{
+    color: #0ef
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+
+}
+.home-content h3 span{
+    color: #0ef;
+
+}
+.home-content h3 :nth-of-type(2){
+    margin-bottom: 30px ;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight:700 ;
+    margin: -3px 0;
+}
+.home-content p{
+    font: size 10px; 
+
+}
+.home-sci  a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 100px 15px 30px 0;
+}
+.home-sci a:hover{
+    background: #0ef;
+    color:#081b29 ;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    animation: alideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+              0 0 25px #0ef;
+   
+}
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan,
+
+
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+.about {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img img{
+    padding-bottom: 20% ;
+    max-width: 630px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+.about-text h2{
+    font-size: 60px;
+}
+.about-text h2 span{
+    color: #0ef;
+}
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+
+}
+.about-text p {
+    color:#fff;
+    font-size:20px ;
+    line-height: 1.8;
+    margin-bottom:4rem ;
+}
+
+.services{
+    margin: 4px 60px;
+    padding: 2px 17px;
+    color: aliceblue;
+    font-size:28px ;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+     padding-top: 30px;
+     padding-bottom: 70px; 
+}
+.sub-title span{
+    color: #0ef;
+}
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.service-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+                1px 1px 40px #0053b8f7
+
+}
+.service-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.service-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+.service-list div a{
+    text-decoration: none;
+    color: #00000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+.read{
+    display: inline-block;
+    padding: 12px 20px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    animation: alideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+              0 0 25px #0ef;
+}
+.read:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+.service-list div :hover{
+        transform: translateY(-10px);
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset:10px ;
+    text-decoration-thickness:5px ;
+    margin-bottom: 50px;
+}
+
+.project{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* From Uiverse.io by bhaveshxrawat */ 
+.card {
+  width: 254px;
+  height: 254px;
+  background: #07182E;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card h2 {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  ;
+  inset: 5px;
+  border-radius: 15px;
+}  
+.card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+}
+
+h2 img{
+    width: 200px;
+    height: 200px;
+}
+/* section new  */
+.Contact{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 span{
+       color: #0ef;
+}
+p{
+    font-size: 16px;
+    color: #081b29;
+
+}
+.underline{
+    width: 50px;
+    height: 2px;
+    background-color: #0ef;
+    margin: 10px auto 20px;
+}
+.form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .form-group input,
+        .form-group text area {
+            width: 32%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            width: 100%;
+            height: 150px;
+            resize: none;
+        }
+
+        .btn {
+            background-color:aqua;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .container p{
+            color: white;
+        }
+        .raaj h1{
+            margin: 2px 27px;
+            padding: 2px 1px;
+        }
+        
+</style>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfoliyo</a>
+
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about"style="--i:2">About</a>
+            <a href="#services"style="--i:2">Services</a>
+            <a href="#proj"style="--i:3">Project</a>
+            <a href="#cont"style="--i:5">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello It's Me</h3><br>
+            <h1>Raj <span>Parmar</span></h1><br>
+            <h3>And I'm a <span id="element"></span></h3><br>
+            <p>I am a web Designer . I am a learner not a professional developer but <br> I can try and give my 100% </p>
+            <div class="home-sci">
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"> </i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"> </i></a>
+                <a href="https:/www.linkedin.com"><i class="fa-brands fa-linkedin"> </i></a>
+                <a href="https:/www.x.com"><i class="fa-brands fa-x"> </i></a>
+            </div>
+            <a href="#" class="btn-box">More About Me</a>
+            </div>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+    <section class="about " id="about">
+        <div class="about-img">
+          <img src="RSP.jpg" alt="">
+
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Fronted Developer</h4>
+            <p>I am a collage student  and a Fronted develpoer. I am learning Fronted in my collage I am also create a zomato fronted website during my first internship</p>
+            <a href="hire.html"class="btn-box">Hire Me</a>
+            <a href="#" class="btn-box">More About Me</a>
+            
+
+        </div>
+    </section>
+    <section>
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My <span>Services</span></h1>
+            <div class="services-list">
+             <div>
+                <i class='bx bx-code' style="color: #0ef;"></i>
+                     <h2>Zomato Design</h2>
+                   <p>During my internship a zomato website is create by me this is my first website code. MY website is also look like original zomato website </p><br>
+                  <a href="zomato.html" class="read">Learn More</a>
+           </div><br>
+           <div>
+                <i class='bx bx-crop' style="color: #0ef;"></i>
+                <h2>Navbar Design</h2>
+                <p>Many types of navbar is is create by me during my coding practice</p><br>
+                 <a href="navbar.html" class="read">Learn More</a>
+            </div><br>
+            <div>
+                <i class='bx bxl-apple' style="color: #0ef;"></i>
+              <h2>Footer Design</h2>
+              <p>A web footer is create by my during my internship and practice work</p><br>
+              <a href="footer.html" class="read">Learn More</a>
+           </div>
+         </div>
+      </div>
+  </div>
+</section>
+<h1 class="sub-title">My <span>Project</span></h1>
+
+<section class="project" id="proj">
+<div class="raaj">
+<div class="card">
+    <h2><a href="application.html"><img src="https://blog.radware.com/wp-content/uploads/2019/10/Confidence.jpg" alt=""></a></h2>
+</div>
+<h1>MY APPLICATION</h1>
+</div>
+<div class="raaj">
+<div class="card">
+    <h2><a href="mobile.html"><img src="https://tse2.mm.bing.net/th?id=OIP.N5mV7Voue1wvHbwV3Ep1DQHaD_&pid=Api&P=0&h=220" alt="Holograme project.."></a></h2>
+</div>
+<h1>MY WEBSITE</h1>
+</div>
+<div class="raaj">
+<div class="card">
+    <h2><a href="invite.html"><img src="https://tse3.mm.bing.net/th?id=OIP.SiHzA51Pcx5ja1MgpFy06QHaFj&pid=Api&P=0&h=220" alt=""></a></h2>
+</div>
+<h1>INVITATION</h1>
+   </div>
+</section>
+<h1 class="sub-title">My <span>Contact</span></h1>
+<section class="Contact" id="cont">
+    <div class="container">
+        <h1>Contact <span>Us</span></h1><br>
+        <p>"Reach out and let's connect to explore opportunities, collaborations, or any inquiries."</p>
+        <div class="underline"></div>
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+      
+</section>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['frontend devloper', 'web devloper'],
+      typeSpeed: 50,
+      loop: true,
+    });
+    document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for your message!');
+    });
+  </script>
+
+
+</body>
+
+</html>
